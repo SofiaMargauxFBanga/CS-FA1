@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 3</title>
+</head>
+<body>
+
+    <p id="info">Click OK to share your info.</p>
+
+    <script>
+        // Task 3: Confirm before displaying info
+        let shareInfo = confirm("Do you want to share your personal information?");
+        
+        if (shareInfo) {
+            console.log(`User chose to share info: ${firstName} ${lastName}, Age: ${age}`);
+            document.getElementById("info").innerText = `User shared: ${firstName} ${lastName}, Age: ${age}`;
+        } else {
+            console.log("User does not wish to share their information.");
+            document.getElementById("info").innerText = "User does not wish to share their information.";
+        }
+    </script>
+
+</body>
+</html>
