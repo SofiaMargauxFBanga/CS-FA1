@@ -7,16 +7,13 @@
     <p id="greeting">Your details will appear here.</p>
 
     <script>
-        // Task 2: Prompt for user input
         let firstName = prompt("Enter your first name:");
         let lastName = prompt("Enter your last name:");
         let birthYear = prompt("Enter your birth year:");
 
-        // Calculate age
         let currentYear = new Date().getFullYear();
         let age = currentYear - birthYear;
 
-        // Display the message in the paragraph
         document.getElementById("greeting").innerText = `Hello ${firstName} ${lastName}! How does it feel to be ${age} years old?`;
     </script>
 
